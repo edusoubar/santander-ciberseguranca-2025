@@ -1,4 +1,0 @@
-user
-msfadmin
-admin
-root
