@@ -100,7 +100,7 @@ echo -e "123456\npassword\nqwerty\nmsfadmin" > pass.txt
 medusa -h 192.168.56.102 -U users.txt -P pass.txt -M ftp -t 6
 ```
 
-✅ Resultado esperado:
+Resultado esperado:
 
 ```
 ACCOUNT FOUND: [ftp] Host: 192.168.56.102 User: msfadmin Password: msfadmin [SUCCESS]
@@ -203,12 +203,12 @@ ACCOUNT FOUND: [smbnt] Host: 192.168.56.102 User: msfadmin Password: msfadmin
 
 ## Aprendizados
 
-Apesar de eficaz em protocolos como FTP, SSH, SMB e Telnet, o Medusa apresenta limitações em ataques a formulários HTTP POST:
+O Medusa apesar de eficaz em protocolos como FTP, SSH, SMB e Telnet, apresenta limitações em ataques a formulários HTTP POST, como:
 
-1. **Suporte limitado a HTTP**: não lida bem com redirecionamentos, cookies ou JavaScript.
-2. **Tokens dinâmicos**: não interpreta ou atualiza CSRF tokens.
-3. **Módulo inexistente**: `http-form` não existe no Medusa.
-4. **Erros frequentes**: interpreta incorretamente respostas válidas como erros.
+- **Suporte limitado a HTTP**: não lida bem com redirecionamentos, cookies ou JavaScript.
+- **Tokens dinâmicos**: não interpreta ou atualiza CSRF tokens.
+- **Módulo inexistente**: `http-form` não existe no Medusa.
+- **Erros frequentes**: interpreta incorretamente respostas válidas como erros.
 
 **Ferramentas mais eficazes para formulários web:**
 
@@ -219,10 +219,6 @@ Apesar de eficaz em protocolos como FTP, SSH, SMB e Telnet, o Medusa apresenta l
 | WFuzz          | Fuzzing de parâmetros web |
 | Patator        | Modular e adaptável a HTTP |
 
----
-
-## Recomendações de Mitigação
-
 - **FTP**: Substituir por SFTP/FTPS. Desativar se não for essencial.
 - **DVWA**: Nunca expor em produção. Usar autenticação forte e bloqueio após tentativas.
 - **SMB**: Remover contas padrão (`msfadmin`, `user`), usar senhas fortes e segmentar a rede.
@@ -232,8 +228,8 @@ Apesar de eficaz em protocolos como FTP, SSH, SMB e Telnet, o Medusa apresenta l
 
 ## Documentações Oficiais
 
-- [Kali Linux – Site Oficial](https://www.kali.org/)
-- [DVWA – Damn Vulnerable Web Application](https://github.com/digininja/DVWA)
-- [Medusa – Documentação](https://tools.kali.org/password-attacks/medusa)
-- [Nmap – Manual Oficial](https://nmap.org/book/man.html)
-- [Hydra – Documentação](https://github.com/vanhauser-thc/thc-hydra)
+- Kali Linux – [Site Oficial](https://www.kali.org/)
+- DVWA – [Damn Vulnerable Web Application](https://github.com/digininja/DVWA)
+- Medusa – [Documentação](https://tools.kali.org/password-attacks/medusa)
+- Nmap – [Manual Oficial](https://nmap.org/book/man.html)
+- Hydra – [Documentação](https://github.com/vanhauser-thc/thc-hydra)
