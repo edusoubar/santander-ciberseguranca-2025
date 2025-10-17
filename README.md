@@ -237,7 +237,3 @@ Apesar de eficaz em protocolos como FTP, SSH, SMB e Telnet, o Medusa apresenta l
 - [Medusa – Documentação](https://tools.kali.org/password-attacks/medusa)
 - [Nmap – Manual Oficial](https://nmap.org/book/man.html)
 - [Hydra – Documentação](https://github.com/vanhauser-thc/thc-hydra)
-
-```
-
-Se quiser, posso ajudar a criar a estrutura de pastas e arquivos para um repositório GitHub completo com esse conteúdo. É só dizer!
