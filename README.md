@@ -67,7 +67,7 @@ Serviços esperados:
 
 ## 3 - Ataques com Medusa e Hydra
 
-> O Medusa já vem instalado no Kali Linux.
+> O Medusa eo Hydra já vêm instalados no Kali Linux.
 
 ### 3.1 Ataque ao FTP
 
